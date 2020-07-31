@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TimeTable</title>
@@ -24,12 +25,22 @@
             href="https://fonts.googleapis.com/css2?family=Oswald:wght@505&display=swap"
             rel="stylesheet">
 
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            type="text/css">
+
     </head>
     <body
         style="background-image: url(https://cdn.theguitarmag.com/wp-content/uploads/2020/02/18191412/GMAG-ink_23280-copy.jpg); width: 500; height: 500;">
-        <div class="container-fluid">
-            <div style="text-align: center; margin: 10px;">
-                <a
+        <div class="container" style="background-color: honeydew; ">
+            <div style="text-align: center; margin-top: 30px;">
+                <a style="margin-top: 30px;"
                     href="index.html"
                     class="btn btn-primary btn-lg active"
                     role="button"
@@ -53,61 +64,173 @@
             </div>
 
             <div
-                style="width: 65%; text-align: center; margin: 60px; box-sizing: border-box;border-spacing: 50px; font-family: 'Oswald', sans-serif; ">
-                <table border="1">
+                style="text-align: center; margin-top: 60px; font-family: 'Oswald', sans-serif; ">
+                <table border="1" style="margin-bottom: 30px;">
                     <colgroup>
                         <col span="7" style="background-color:whitesmoke">
                     </colgroup>
                     <tr style="height: 960; width: 1080;">
                         <th>
-                            Monday</a>
-                    </th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                    <th>Saturday</th>
-                    <th>Sunday</th>
+                            <a href="#" onclick="slideMon();return false;">Monday</a>
+                        </th>
+                        <th>
+                            <a href="#" onclick="slideTue();return false;">tuesday</a>
+                        </th>
+                        <th>
+                            <a href="#" onclick="slideWed();return false;">wednesday</a>
+                        </th>
+                        <th>
+                            <a href="#" onclick="slideThur();return false;">thursday</a>
+                        </th>
+                        <th>
+                            <a href="#" onclick="slideFri();return false;">friday</a>
+                        </th>
+                        <th>
+                            <a href="#" onclick="slideSat();return false;">satuday</a>
+                        </th>
+                        <th>
+                            <a href="#" onclick="slideSun();return false;">sunday</a>
+                        </th>
                 </tr>
                 <tr>
                     <td></td>
-                    <td>01418442 - Web Technology and Web Services (Lecture) 10:00-12:00</td>
-                    <td>01418341 - Intellectual Properties and Professional Ethics 8:00-9:30</td>
+                    <td>
+                        <a href="#">01418442 - Web Technology and Web Services (Lecture) 10:00-12:00</a>
+                    </td>
+                    <td>
+                        <a href="#">01418341 - Intellectual Properties and Professional Ethics 8:00-9:30</a>
+                    </td>
                     <td></td>
-                    <td>01418341 - Intellectual Properties and Professional Ethics 8:00-9:30</td>
-                    <td>01385261 - Northern Thai Folk Music 16:30-19:30</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>01418442 - Web Technology and Web Services (Lab) 14:30-16:00</td>
-                    <td>01418216 - Principles of Programming Languages 9:30-11:00</td>
-                    <td></td>
-                    <td>01418322 - Principles of Information System 14:30-16:00</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>01418354 - Cloud Computing Concepts and Services 11:30-14:30</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        <a href="#">01418341 - Intellectual Properties and Professional Ethics 8:00-9:30</a>
+                    </td>
+                    <td>
+                        <a href="#">01385261 - Northern Thai Folk Music 16:30-19:30</a>
+                    </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td></td>
+                    <td>
+                        <a href="#">01418442 - Web Technology and Web Services (Lab) 14:30-16:00</a>
+                    </td>
+                    <td>
+                        <a href="#">01418216 - Principles of Programming Languages 9:30-11:00</a>
+                    </td>
                     <td></td>
-                    <td>01418322 - Principles of Information System 14:30-16:00</td>
+                    <td>
+                        <a href="#">01418322 - Principles of Information System 14:30-16:00</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="#">01418354 - Cloud Computing Concepts and Services 11:30-14:30</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="#">01418322 - Principles of Information System 14:30-16:00</a>
+                    </td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                 </tr>
             </table>
+
+            <!-- icon open -->
+
+            <div>
+                <h1>
+                    <i class="far fa-arrow-alt-circle-down"></i><i class="far fa-arrow-alt-circle-down"></i><i class="far fa-arrow-alt-circle-down"></i><i class="far fa-arrow-alt-circle-down"></i><i class="far fa-arrow-alt-circle-down"></i>
+                </h1>
+            </div>
+
+
+  
+    
+                <!-- mon -->
+                <script>
+                    function slideMon() {
+                    document.getElementById("mon-slide").innerHTML="iiiiiii"
+                    style.visibility='visible';
+                    }
+                </script>
+                <div id="mon-slide"></div>
+
+                <!-- tue -->
+                <script>
+                    function slideTue() {
+                    document.getElementById("tue-slide").innerHTML="qqqqqqq"
+                    style.visibility='visible';
+                    }
+                </script>
+                <div id="tue-slide"></div>    
+
+                <!-- wed -->
+                <script>
+                    function slideWed() {
+                    document.getElementById("wed-slide").innerHTML="eeeeee"
+                    style.visibility='visible';
+                    }
+                </script>
+                <div id="wed-slide"></div>   
+
+                <!-- thur -->
+                <script>
+                    function slideThur() {
+                    document.getElementById("thur-slide").innerHTML="rrrrr"
+                    style.visibility='visible';
+                    }
+                </script>
+                <div id="thur-slide"></div>
+
+                <!-- fri -->
+                <script>
+                    function slideFri() {
+                    document.getElementById("fri-slide").innerHTML="hhhhhhh"
+                    style.visibility='visible';
+                    }
+                </script>
+                <div id="fri-slide"></div>
+
+                <!-- sat -->
+                <script>
+                    function slideSat() {
+                    document.getElementById("sat-slide").innerHTML="ddddd"
+                    style.visibility='visible';
+                    }
+                </script>
+                <div id="sat-slide"></div>
+
+                <!-- sunday -->
+                <script style="margin-bottom: 30px;">
+                    function slideSun() {
+                    document.getElementById("sun-slide").innerHTML="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    style.visibility='visible';
+                    }
+                </script>
+                <div id="sun-slide"></div>
+
+
+            <!-- icon close -->
+
+                <div>
+                    <h1>
+                        <i class="far fa-arrow-alt-circle-up"></i><i class="far fa-arrow-alt-circle-up"></i><i class="far fa-arrow-alt-circle-up"></i><i class="far fa-arrow-alt-circle-up"></i><i class="far fa-arrow-alt-circle-up"></i>
+                    </h1>
+                </div>
         </div>
-    </div>
 
 </body>
 </html>
