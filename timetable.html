@@ -45,17 +45,17 @@
                     class="btn btn-primary btn-lg active"
                     role="button"
                     aria-pressed="true">Home</a>
-                <a
+                <a style="margin-top: 30px;"
                     href="game.html"
                     class="btn btn-primary btn-lg active"
                     role="button"
                     aria-pressed="true">ROV Lane</a>
-                <a
+                <a style="margin-top: 30px;"
                     href="game2.html"
                     class="btn btn-primary btn-lg active"
                     role="button"
                     aria-pressed="true">ROV Profile</a>
-                <a
+                <a style="margin-top: 30px;"
                     href="reference.html"
                     class="btn btn-primary btn-lg active"
                     role="button"
@@ -74,64 +74,53 @@
                             <a href="#" onclick="slideMon();return false;">Monday</a>
                         </th>
                         <th>
-                            <a href="#" onclick="slideTue();return false;">tuesday</a>
+                            <a href="#" onclick="slideTue();return false;">Tuesday </a>
                         </th>
                         <th>
-                            <a href="#" onclick="slideWed();return false;">wednesday</a>
+                            <a href="#" onclick="slideWed();return false;">Wednesday</a>
                         </th>
                         <th>
-                            <a href="#" onclick="slideThur();return false;">thursday</a>
+                            <a href="#" onclick="slideThur();return false;">Thuusday</a>
                         </th>
                         <th>
-                            <a href="#" onclick="slideFri();return false;">friday</a>
+                            <a href="#" onclick="slideFri();return false;">Friday</a>
                         </th>
                         <th>
-                            <a href="#" onclick="slideSat();return false;">satuday</a>
+                            <a href="#" onclick="slideSat();return false;">Saturday</a>
                         </th>
                         <th>
-                            <a href="#" onclick="slideSun();return false;">sunday</a>
+                            <a href="#" onclick="slideSun();return false;">Sunday</a>
                         </th>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <a href="#">01418442 - Web Technology and Web Services (Lecture) 10:00-12:00</a>
+                        <a href="#" onclick="slideWebLec();return false;">01418442 - Web Technology and Web Services (Lecture) 10:00-12:00</a>
                     </td>
                     <td>
-                        <a href="#">01418341 - Intellectual Properties and Professional Ethics 8:00-9:30</a>
+                        <a href="#" onclick="slideIp();return false;">01418341 - Intellectual Properties and Professional Ethics 8:00-9:30</a>
                     </td>
                     <td></td>
                     <td>
-                        <a href="#">01418341 - Intellectual Properties and Professional Ethics 8:00-9:30</a>
+                        <a href="#" onclick="slideIp();return false;">01418341 - Intellectual Properties and Professional Ethics 8:00-9:30</a>
                     </td>
                     <td>
-                        <a href="#">01385261 - Northern Thai Folk Music 16:30-19:30</a>
+                        <a href="#" onclick="slideMusic();return false;">01385261 - Northern Thai Folk Music 16:30-19:30</a>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <a href="#">01418442 - Web Technology and Web Services (Lab) 14:30-16:00</a>
+                        <a href="#" onclick="slideWebLab();return false;">01418442 - Web Technology and Web Services (Lab) 14:30-16:00</a>
                     </td>
                     <td>
-                        <a href="#">01418216 - Principles of Programming Languages 9:30-11:00</a>
+                        <a href="#" onclick="slidePpl();return false;">01418216 - Principles of Programming Languages 9:30-11:00</a>
                     </td>
                     <td></td>
                     <td>
-                        <a href="#">01418322 - Principles of Information System 14:30-16:00</a>
+                        <a href="#" onclick="slideIs();return false;">01418322 - Principles of Information System 14:30-16:00</a>
                     </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <a href="#">01418354 - Cloud Computing Concepts and Services 11:30-14:30</a>
-                    </td>
-                    <td></td>
-                    <td></td>
                     <td></td>
                     <td></td>
                 </tr>
@@ -139,7 +128,18 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <a href="#">01418322 - Principles of Information System 14:30-16:00</a>
+                        <a href="#" onclick="slideCloud();return false;">01418354 - Cloud Computing Concepts and Services 11:30-14:30</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="#" onclick="slideIs();return false;">01418322 - Principles of Information System 14:30-16:00</a>
                     </td>
                     <td></td>
                     <td></td>
@@ -162,7 +162,7 @@
                 <!-- mon -->
                 <script>
                     function slideMon() {
-                    document.getElementById("mon-slide").innerHTML="iiiiiii"
+                    document.getElementById("mon-slide").innerHTML=""
                     style.visibility='visible';
                     }
                 </script>
@@ -171,16 +171,16 @@
                 <!-- tue -->
                 <script>
                     function slideTue() {
-                    document.getElementById("tue-slide").innerHTML="qqqqqqq"
+                    document.getElementById("tue-slide").innerHTML="[TUESDAY] 01418442 - Web Technology and Web Services (Lecture) 10:00-12:00 | Web Technology and Web Services (Lab) 14:30-16:30"
                     style.visibility='visible';
                     }
                 </script>
-                <div id="tue-slide"></div>    
+                <div id="tue-slide"></div>
 
                 <!-- wed -->
                 <script>
                     function slideWed() {
-                    document.getElementById("wed-slide").innerHTML="eeeeee"
+                    document.getElementById("wed-slide").innerHTML="[WEDNESDAY] 01418341 - Intellectual Properties and Professional Ethics 8:00-9:30 | 01418216 - Principles of Programming Languages 9:30-11:00 | 01418354 - Cloud Computing Concepts and Services 11:30-14:30 | 01418322 - Principles of Information System 14:30-16:00"
                     style.visibility='visible';
                     }
                 </script>
@@ -189,7 +189,7 @@
                 <!-- thur -->
                 <script>
                     function slideThur() {
-                    document.getElementById("thur-slide").innerHTML="rrrrr"
+                    document.getElementById("thur-slide").innerHTML=""
                     style.visibility='visible';
                     }
                 </script>
@@ -198,7 +198,7 @@
                 <!-- fri -->
                 <script>
                     function slideFri() {
-                    document.getElementById("fri-slide").innerHTML="hhhhhhh"
+                    document.getElementById("fri-slide").innerHTML="[FRIDAY] 01418341 - Intellectual Properties and Professional Ethics 8:00-9:30 | 01418322 - Principles of Information System 14:30-16:00"
                     style.visibility='visible';
                     }
                 </script>
@@ -207,7 +207,7 @@
                 <!-- sat -->
                 <script>
                     function slideSat() {
-                    document.getElementById("sat-slide").innerHTML="ddddd"
+                    document.getElementById("sat-slide").innerHTML="[SATURDAY] 01385261 - Northern Thai Folk Music 16:30-19:30"
                     style.visibility='visible';
                     }
                 </script>
@@ -216,11 +216,92 @@
                 <!-- sunday -->
                 <script style="margin-bottom: 30px;">
                     function slideSun() {
-                    document.getElementById("sun-slide").innerHTML="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    document.getElementById("sun-slide").innerHTML=""
                     style.visibility='visible';
                     }
                 </script>
                 <div id="sun-slide"></div>
+
+                <!-- subject tue -->
+                <script style="margin-bottom: 30px;">
+                    function slideWebLec() {
+                    document.getElementById("sub-tue").innerHTML="[01418442] หลักการเว็บเทคโนโลยีและเว็บบริการ ข้อกำหนดมาตรฐานของเว็บเทคโนโลยี สถาปัตยกรรมและส่วนประกอบ ลักษณะการทำงานและกลไกของระบบเว็บบริการ การพัฒนาโปรแกรมสำเร็จรูปเว็บเทคโนโลยีลักษณะการทำงานและโครงแบบเอพีไอ REF.https://cs.sci.ku.ac.th/curriculum/bachelor/y2560/course/c01418442/"
+                    style.visibility='visible';
+                    }
+                </script>
+                <div id="sub-tue"></div>
+
+                <!-- subject tue2 -->
+                <script style="margin-bottom: 30px;">
+                    function slideWebLab() {
+                    document.getElementById("sub-tue").innerHTML="[01418442] หลักการเว็บเทคโนโลยีและเว็บบริการ ข้อกำหนดมาตรฐานของเว็บเทคโนโลยี สถาปัตยกรรมและส่วนประกอบ ลักษณะการทำงานและกลไกของระบบเว็บบริการ การพัฒนาโปรแกรมสำเร็จรูปเว็บเทคโนโลยีลักษณะการทำงานและโครงแบบเอพีไอ REF.https://cs.sci.ku.ac.th/curriculum/bachelor/y2560/course/c01418442/"
+                    style.visibility='visible';
+                    }
+                </script>
+                <div id="sub-tue"></div>
+
+                <!-- subject wed -->
+                <script style="margin-bottom: 30px;">
+                    function slideIp() {
+                    document.getElementById("sub-wed").innerHTML="[01418341] ประเภทของทรัพย์สินทางปัญญา การได้มาซึ่งลิขสิทธิ์ สิทธิแต่เพียงผู้เดียวของเจ้าของลิขสิทธิ์การละเมิดลิขสิทธิ์ การใช้โดยธรรม ใบอนุญาตของซอฟต์แวร์เสรีใบอนุญาตของซอฟต์แวร์เปิดเผยรหัส ใบอนุญาตให้ใช้โปรแกรมคอมพิวเตอร์ ครีเอทีฟคอมมอนส์สิทธิบัตร เครื่องหมายการค้าและเครื่องหมายการบริการ นโยบายส่วนบุคคล อาชญากรรมคอมพิวเตอร์กรณีศึกษา REF.https://cs.sci.ku.ac.th/curriculum/bachelor/y2560/course/c01418341/"
+                    style.visibility='visible';
+                    }
+                </script>
+                <div id="sub-wed"></div>
+
+                <!-- subject wed2 -->
+                <script style="margin-bottom: 30px;">
+                    function slidePpl() {
+                    document.getElementById("sub-wed2").innerHTML="[01418216] โครงสร้างการนิยามภาษา ไวยากรณ์และอรรถศาสตร์ การวิเคราะห์ศัพท์และการแจงส่วน ชนิดและโครงสร้างของข้อมูล โครงสร้างควบคุม โปรแกรมย่อย REF.https://cs.sci.ku.ac.th/curriculum/bachelor/y2555/course/c01418216/"
+                    style.visibility='visible';
+                    }
+                </script>
+                <div id="sub-wed2"></div>
+
+                <!-- subject wed3 -->
+                <script style="margin-bottom: 30px;">
+                    function slideCloud() {
+                    document.getElementById("sub-wed3").innerHTML="[01418354] นิยามมาตราฐาน ลักษณะจำเป็น ตัวแบบบริการ ตัวแบบการติดตั้งใช้งาน สถาปัตยกรรมอ้างอิง ข้อดีข้อเสียทางเทคนิค คุณภาพทางธุรกิจและกรณีศึกษา การทำเสมือน เทคโนโลยีโครงสร้างพื้นฐาน การจัดการทรัพยากร การนำมาใช้ การปกครอง ความมั่นคง ผู้ให้บริการคลาวด์สาธารณะหลัก บริการเครื่องบริการเสมือน บริการหน่วยเก็บเสมือน บริการเครือข่ายเสมือน REF.https://classroom.google.com/u/1/c/MTEzMTEyODM4NzMw/m/MTEzMTEyODM4NzQz/details"
+                    style.visibility='visible';
+                    }
+                </script>
+                <div id="sub-wed3"></div>
+
+                <!-- subject wed4 -->
+                <script style="margin-bottom: 30px;">
+                    function slideIs() {
+                    document.getElementById("sub-wed").innerHTML="[01418322] แนวคิดของข้อมูลและสารสนเทศ การจัดองค์การบริหาร โครงสร้างระบบสารสนเทศ สารสนเทศตามความต้องการของการจัดการ แนวคิดเกี่ยวกับระบบ วัฏจักรระบบ การพัฒนาระบบสารสนเทศ การใช้งานของระบบสารสนเทศและตัวอย่าง REF.https://cs.sci.ku.ac.th/curriculum/bachelor/y2555/course/c01418322/"
+                    style.visibility='visible';
+                    }
+                </script>
+                <div id="sub-wed"></div>
+
+                <!-- subject fri -->
+                <script style="margin-bottom: 30px;">
+                    function slideIp() {
+                    document.getElementById("sub-fri").innerHTML="[01418341] ประเภทของทรัพย์สินทางปัญญา การได้มาซึ่งลิขสิทธิ์ สิทธิแต่เพียงผู้เดียวของเจ้าของลิขสิทธิ์การละเมิดลิขสิทธิ์ การใช้โดยธรรม ใบอนุญาตของซอฟต์แวร์เสรีใบอนุญาตของซอฟต์แวร์เปิดเผยรหัส ใบอนุญาตให้ใช้โปรแกรมคอมพิวเตอร์ ครีเอทีฟคอมมอนส์สิทธิบัตร เครื่องหมายการค้าและเครื่องหมายการบริการ นโยบายส่วนบุคคล อาชญากรรมคอมพิวเตอร์กรณีศึกษา REF.https://cs.sci.ku.ac.th/curriculum/bachelor/y2560/course/c01418341/"
+                    style.visibility='visible';
+                    }
+                </script>
+                <div id="sub-fri"></div>
+
+                <!-- subject fri2 -->
+                <script style="margin-bottom: 30px;">
+                    function slidePpl() {
+                    document.getElementById("sub-fri2").innerHTML="[01418216] โครงสร้างการนิยามภาษา ไวยากรณ์และอรรถศาสตร์ การวิเคราะห์ศัพท์และการแจงส่วน ชนิดและโครงสร้างของข้อมูล โครงสร้างควบคุม โปรแกรมย่อย REF.https://cs.sci.ku.ac.th/curriculum/bachelor/y2555/course/c01418216/"
+                    style.visibility='visible';
+                    }
+                </script>
+                <div id="sub-fri2"></div>
+
+                <!-- subject sat -->
+                <script style="margin-bottom: 30px;">
+                    function slideMusic() {
+                    document.getElementById("sub-sat").innerHTML="[01385261] เพื่อศึกษาประเภทเครื่องดนตรีและวงดนตรีต่างๆของภาคเหนือ บทบาทและหน้าที่ของดนตรีพื้นเมืองภาคเหนือ และลักษณะทางวัฒนธรรมไทย"
+                    style.visibility='visible';
+                    }
+                </script>
+                <div id="sub-sat"></div>
 
 
             <!-- icon close -->
